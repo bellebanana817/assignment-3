@@ -1,0 +1,220 @@
+
+body {
+
+  background-color: #F5DEB3;
+  color: rgb(63, 36, 3);
+  margin: 0; /* prevents MARGINS from default page */
+  padding: 0; /* prevents PADDINGS from default page */
+}
+
+.music { /* PROPERTIES for sound icon */
+    position: absolute; /* makes image fixed */
+    bottom: 10%; 
+    right: 10%; 
+    z-index: 999; /* ENSURE icon is in foreground */
+    font-size: 100px;
+  }
+
+
+
+  nav{
+    background-color:#F5F5DC ;
+    position:sticky;
+ }
+    
+ nav a {
+    color: black;
+    transition: 2s;
+    padding: 40px;
+ }
+
+ nav a:hover{
+    color:rgb(228, 90, 16)
+ }
+
+
+
+nav ul li {
+    display: inline-block;
+    border-top: 2px (#F6F0E2);
+}
+
+.burger, .label {
+    display:none;
+}
+
+#home{
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+#home img{
+    border-radius: 500px;
+
+}
+
+p.title {
+    text-align: center; 
+    font-size: 80px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* assign font */
+    color: rgb(249, 1, 1); /* assign colour bisque to title */
+
+}
+   
+
+p.description {
+    padding: 50px 100px;
+    display: inline-block;
+    font-size: 20px; /* assigns 20px to its font size */
+    margin-top: -30px; /* negative px makes it so there is 30px TAKEN FROM top, rather than ADDED (minimises space) */
+    border-style: none none none solid; /* style of border is 'solid' which makes the border visible. Only shows on left side */
+    border-color: rgb(255, 255, 255) /* assigns RGB colour to border outline */
+}
+
+.gallery-top img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-top img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.gallery {
+    padding: 50px 100px;
+    display: inline-block;
+    opacity: 2;
+    transition: 2s;
+}
+
+.img1, .img2, .img3 {
+    object-fit: cover; /* inputted image covers the entirety of the container (does NOT squish image (leaves scale in the same ratio) or leave empty space) */
+    border-style: groove; /* assigns 3d effect to border */
+    border-radius: 15%; /* makes images have slightly round edges (contour bias) */
+    padding: 10px; /* assigns 10px internal space between image and border */
+    margin: 5px; /* assigns 5px external space between images (breathes) */
+}
+
+.arrow-down {
+    width: 70px;
+    height: 70px;
+    animation: bounce 1s infinite;
+}
+
+/* Keyframes for the bouncing effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+#ourstory{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F6F0E2;
+}
+
+.Creatorandfounder{
+    width: fit-content;
+    border-radius: 200px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: antiquewhite;
+
+}
+
+.story {
+    width: 200px;
+    height: 200px;
+    align-content: center;
+}
+
+.button2 {
+    background-color:#BBFABF;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.button2:hover{
+    background-color:rgb(227, 133, 17);
+}
+    
+.donate, .Volunteer {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    text-align: center;
+} 
+     
+.help1, .help2 {
+    padding: 50px 100px;
+    display: inline-block;
+    opacity: 2;
+    transition: 2s;
+}
+
+.help1 img, .help2 img {
+    transition: transform 0.3s ease;
+}
+
+.help1 img:hover, .help2 img:hover {
+    transform: translateY(-10px); /* Moves the image 10px up */
+}
+
+.footer{
+    background-color: rgb#F6F0E2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+    scroll-margin-top: 100px;
+
+}
+
+.footer1, .footer2{
+    height: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.socialmediaacc1, .socialmediaacc2 {
+    display: inline-block; /* positions SOCIALS ICONS next to each other */
+  text-align: center;
+  width: 70px;
+  height: 70px;
+}
+
+#isabelle-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.isabelle-body {
+    width: 500px;
+    height: 500px;
+    background-image: url('images/isabelle.png'); /* Adjust the path if necessary */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+

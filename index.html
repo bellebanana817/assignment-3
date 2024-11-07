@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">    
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+       <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script> 
+
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+       
+       <link rel="stylesheet" href="styles.css">
+       <title>RSPCA Website</title>
+ß
+
+    </head>
+
+    <body>
+
+        <div class="music">
+            <sl-icon-button name="volume-up" id="sound-btn"></sl-icon-button>
+          </div>
+
+        <nav>
+            <label for="burger" class="hambuger">&#9776;</label>
+            <input id="burger" type="checkbox">
+
+
+        <ul> 
+            <li><a href="#ourstory">Our Story</a></li>
+            <li><a href="#footer">Join</footer></a></li>
+        </ul>
+
+    </nav>
+
+ 
+
+    <header>
+
+        <div id="fullpage"></div>
+    
+        <!-- ref
+        https://www.flaticon.com/free-icon/dog-house_760984 -->
+        <img class="logo" src="images/dog-house.png" width="30" height="30" alt="Dog house">  
+        <a href="#homepage"></a>
+      </header>
+
+        <div class="bg"></div>
+
+        <div id="home">
+            <div class="homepage">
+                 <img src="/images/greeting image.jpg"  width="700" height="500" alt="greeting image">
+                <h1> Give pets a Loving home</h1>
+                <div class="scroll-down">
+                    <p class="scroll-down-text">Scroll down to learn more</p>
+                    <img class="arrow-down" src="images/arrow.png" width="70" height="70" alt="arrow down image">
+                <p></p>
+            </div>
+
+            <div class="title">
+
+                <h1>The Benefits</h1>
+
+              </div>
+
+              <section class="splide" aria-label="Splide Basic Slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide gallery"><img src="images/happy owner.jpg" width="500" height="500" alt="benefit 1">
+                            <p class="slide-text">"Adopting a pet brings joy and companionship."</p> </li>
+                        <li class="splide__slide gallery"><img src="images/good-cause.jpg" width="500" height="500" alt="benefit 2">
+                            <p class="slide-text">"Its good for the environment."</p> </li>
+                        <li class="splide__slide gallery"><img src="images/poor-animals.jpg" width="500" height="500" alt="benefit 3">
+                            <p class="slide-text">"You will be helping poor animals by giving them a home."</p> </li>
+                    </ul>
+                </div>
+            </section>
+
+            
+
+
+
+             
+
+          
+
+              <section class="main-text">
+                <p class="title">The Problem<p>
+                    <p class="description">"Abandoned animals often struggle to find food, water, and shelter,
+                        leading to malnutrition, dehydration, and susceptibility to diseases. Without proper veterinary care, 
+                        they may suffer from untreated injuries or infections, Stray animals are vulnerable to accidents, such as being hit by cars, 
+                        or attacks from other animals. They may also be exposed to environmental dangers like extreme weather conditions
+                        </p>
+
+                        <lottie-player 
+                        src= "Animation1730976803851.json"
+                         background="transparent" 
+                         speed="1" 
+                         style="width: 300px; height: 300px;"
+                         loop 
+                          autoplay>
+                         </lottie-player>
+                        </section>
+
+                        
+                    </section>
+
+
+                    <div class="gallery-top">
+                        <img class="img1" src="images/homeless cat.jpg" width="450" height="220" alt="1st image of gallery">
+                           
+                        <img class="img2" src="images/poor-doggo.jpg" width="450" height="220" alt="2nd image of gallery">
+                           
+                        <img class="img3" src="images/sad-animals.jpeg" width="450" height="220" alt="3rd image of gallery">
+                          
+                        </div>
+
+                
+
+                
+                  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                          new Splide('.splide', {
+                            type       : 'loop',
+                            perPage    : 1,
+                            autoplay   : true,
+                            interval   : 3000,
+                            pauseOnHover: true,
+                            arrows     : true,
+                            pagination : true,
+                          }).mount();
+                        });
+                      </script>
+                      
+                      <section id="ourstory">
+                        
+                        <img class="Creatorandfounder" src="images/rspca-team .webp" alt="image of founder">
+                         <div class="story">
+                            <h1>Our story</h1>
+                            <p>The RSPCA’s history in Australia dates back to 1871, when a public meeting to discuss the ill treatment of horses in Victoria led to the formation of Australia’s first Society for the Prevention of Cruelty to Animals. 
+                                Following the establishment of a Society in Victoria, other states soon followed.</p>
+   
+                            <div class="button2">
+                                 <span>learn more</span>
+                                 </div>
+                                
+                                </div>
+                            
+                            </section>
+
+
+                            <section id="help">
+
+                            <h1>"Every year, millions of animals are abandoned. In Australia alone, around 6.3 million pets end up in shelters,
+                                 with roughly 920,000 facing euthanasia due to overcrowding and limited resources"​</h1>
+
+                                 <p>This is how you can help</p>
+
+                <div class="row">
+                    <div class="help1">
+                        <img class="donate" src="images/donate-happy.jpg" alt="help 1 image">
+                        <h2>donate</h2>
+                    </div>
+
+                    <div class=" help2">
+                        <img class="Volunteer" src="images/volunteer-happy.jpeg" alt="help 2 image">
+                        <h2>Volunteer</h2>
+
+                    </div>
+
+
+
+                </div>
+            </section>
+
+                <section id="footer"> 
+            
+                    <!--CONTACT FORM OR TEXT-->
+                    <div class="footer1">
+                    <h1>Contact us</h1>
+                        <p>Please call us at 56608991</p>
+                        <p>email us at: rspca-team@gmail.com</p>
+            
+                        <img class="socialmediaacc1" src="images/twitter icon .webp" alt="X image">
+                        <img class="socialmediaacc2" src="images/insta. icon webp.webp" alt="insta image">
+            
+                    </div>
+            
+                    <div class="footer2">
+                        <h1>Explore and join the family</h1>
+            
+                
+        
+            
+            
+                    </div>
+
+
+
+                    <section id="isabelle-animation" class="animated-section">
+                        <h2>Have a nice day</h2>
+                        <div class="isabelle-body">
+                            <!-- Animated Isabelle image -->
+                        </div>
+                    </section>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+
+              <script src="main.js"></script>
+            
+            </body>
+            
+            </html>
+            
+
+
+
+
+            
+ 
